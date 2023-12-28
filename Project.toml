@@ -3,7 +3,18 @@ uuid = "2b8b8f90-7f84-4ddf-802f-11415fc12230"
 authors = ["Brian Chen <ToucheSir@users.noreply.github.com> and contributors"]
 version = "1.0.0-DEV"
 
+[deps]
+GPUArrays = "0c68f7d7-f131-5f86-a1c3-88cf8149b2d7"
+
+[weakdeps]
+AMDGPU = "21141c5a-9bdb-4563-92ae-f87d6854732e"
+
 [compat]
+AMDGPU = "0.8"
+Aqua = "0.8"
+GPUArrays = "9, 10"
+JET = "0.8"
+Test = "1"
 julia = "1"
 
 [extras]
@@ -12,4 +23,4 @@ JET = "c3a54625-cd67-489e-a8e7-0a5a0ff4e31b"
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 
 [targets]
-test = ["Aqua", "JET", "Test"]
+test = ["AMDGPU", "Aqua", "JET", "Test"]
