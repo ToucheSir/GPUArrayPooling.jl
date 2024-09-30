@@ -2,8 +2,11 @@ module GPUArrayPooling
 
 using GPUArrays: DataRef, unsafe_free!
 
-function wrap_buffer! end
+export wrap_buffer!, empty_pool!
+
+function wrap_buffer end
 function empty_pool! end
+function pool_info end
 
 struct BufferPool{B}
     bufs::Vector{DataRef{B}}

@@ -9,6 +9,9 @@ GPUArrays = "0c68f7d7-f131-5f86-a1c3-88cf8149b2d7"
 [weakdeps]
 AMDGPU = "21141c5a-9bdb-4563-92ae-f87d6854732e"
 
+[extensions]
+GPUArrayPoolingAMDGPUExt = "AMDGPU"
+
 [compat]
 AMDGPU = "0.8"
 Aqua = "0.8"
